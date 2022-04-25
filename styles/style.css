@@ -79,28 +79,25 @@ p {
     margin: var(--gutter);
 
 }
-
-.button1 {
-    
-}
-.button2 {
-
+button {
+    margin: 5px;
+    border: 3px dotted black;
 }
 
-.button3 {
-
-}  
-
-.shell1 {
+.Shell {
+    display: inline-block;
+    vertical-align: middle
 
 }
-
-.shell2 {
-
+#shelldiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.shell3 {
-
+.shellcontainer {
+    display: flex;
+    flex-direction: row;
 }
 
 
