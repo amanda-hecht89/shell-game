@@ -86,12 +86,14 @@ button {
 }
 
 .beachball {
-    display: none;
+    display: none
+    
 }
 
 .Shell {
     display: inline-block;
     vertical-align: middle
+    
 
 }
 .shelldiv {
