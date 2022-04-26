@@ -34,4 +34,35 @@ button1.addEventListener('click', () => {
     lossesdiv.textContent = losses;
     totaldiv.textContent = win + losses;
 });
-  
+button2.addEventListener('click', () => {
+    const randomNum1 = Math.ceil(Math.random() * 3); 
+    if (randomNum1 === 2) { 
+        shell1.classList.add('reveal');
+        win++;
+    } else if (randomNum1 === 3) {
+        shell2.classList.add('reveal');
+        losses++;
+    } else {
+        shell3.classList.add('reveal');
+        losses++;
+    }
+    winsdiv.textContent = win;
+    lossesdiv.textContent = losses;
+    totaldiv.textContent = win + losses;
+});  
+button3.addEventListener('click', () => {
+    const randomNum1 = Math.ceil(Math.random() * 3); 
+    if (randomNum1 === 3) { 
+        shell1.classList.add('reveal');
+        win++;
+    } else if (randomNum1 === 2) {
+        shell2.classList.add('reveal');
+        losses++;
+    } else {
+        shell3.classList.add('reveal');
+        losses++;
+    }
+    winsdiv.textContent = win;
+    lossesdiv.textContent = losses;
+    totaldiv.textContent = win + losses;
+});
