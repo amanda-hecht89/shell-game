@@ -81,7 +81,12 @@ p {
 }
 button {
     margin: 5px;
-    border: 3px dotted black;
+    border: 3px dotted rgb(204, 18, 49);
+
+}
+
+.beachball {
+    display: none;
 }
 
 .Shell {
@@ -89,10 +94,15 @@ button {
     vertical-align: middle
 
 }
-#shelldiv {
+.shelldiv {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.shelldiv.reveal .beachball {
+    display: block;
 }
 
 .shellcontainer {
