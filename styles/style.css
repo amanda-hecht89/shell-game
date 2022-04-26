@@ -90,6 +90,11 @@ button {
     
 }
 
+.results {
+    display: flex;
+    flex-direction: row;
+}
+
 .Shell {
     display: inline-block;
     vertical-align: middle
