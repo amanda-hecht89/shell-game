@@ -18,8 +18,21 @@ let losses = 0;
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+const displayResults = () => {
+    winsdiv.textContent = win;
+    lossesdiv.textContent = losses;
+    totaldiv.textContent = win + losses;
+};
+
+const resetstyles = () => {
+    shell1.classList.remove('reveal');
+    shell2.classList.remove('reveal');
+    shell3.classList.remove('reveal');
+};
+
 button1.addEventListener('click', () => {
     const randomNum1 = Math.ceil(Math.random() * 3); 
+    resetstyles();
     if (randomNum1 === 1) { 
         shell1.classList.add('reveal');
         win++;
@@ -30,39 +43,35 @@ button1.addEventListener('click', () => {
         shell3.classList.add('reveal');
         losses++;
     }
-    winsdiv.textContent = win;
-    lossesdiv.textContent = losses;
-    totaldiv.textContent = win + losses;
+    displayResults();
 });
 button2.addEventListener('click', () => {
     const randomNum1 = Math.ceil(Math.random() * 3); 
+    resetstyles();
     if (randomNum1 === 2) { 
-        shell1.classList.add('reveal');
+        shell2.classList.add('reveal');
         win++;
     } else if (randomNum1 === 3) {
-        shell2.classList.add('reveal');
-        losses++;
-    } else {
         shell3.classList.add('reveal');
         losses++;
+    } else {
+        shell1.classList.add('reveal');
+        losses++;
     }
-    winsdiv.textContent = win;
-    lossesdiv.textContent = losses;
-    totaldiv.textContent = win + losses;
+  
 });  
 button3.addEventListener('click', () => {
     const randomNum1 = Math.ceil(Math.random() * 3); 
+    resetstyles();
     if (randomNum1 === 3) { 
-        shell1.classList.add('reveal');
+        shell3.classList.add('reveal');
         win++;
     } else if (randomNum1 === 2) {
         shell2.classList.add('reveal');
         losses++;
     } else {
-        shell3.classList.add('reveal');
+        shell1.classList.add('reveal');
         losses++;
     }
-    winsdiv.textContent = win;
-    lossesdiv.textContent = losses;
-    totaldiv.textContent = win + losses;
+
 });
