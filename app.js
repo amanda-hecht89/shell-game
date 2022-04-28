@@ -58,7 +58,7 @@ button2.addEventListener('click', () => {
         shell1.classList.add('reveal');
         losses++;
     }
-  
+    displayResults();
 });  
 button3.addEventListener('click', () => {
     const randomNum1 = Math.ceil(Math.random() * 3); 
@@ -73,5 +73,5 @@ button3.addEventListener('click', () => {
         shell1.classList.add('reveal');
         losses++;
     }
-
+    displayResults();
 });
