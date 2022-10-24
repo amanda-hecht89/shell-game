@@ -77,8 +77,48 @@ header img {
 
 p {
     margin: var(--gutter);
+
 }
-  
+button {
+    margin: 5px;
+    border: 3px dotted rgb(204, 18, 49);
+
+}
+
+.beachball {
+    display: none
+    
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+}
+
+.Shell {
+    display: inline-block;
+    vertical-align: middle
+    
+
+}
+.shelldiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shelldiv.reveal .beachball {
+    display: block;
+}
+
+.shellcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 footer {
     position: fixed;
     width: 100%;
